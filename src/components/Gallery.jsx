@@ -4,7 +4,7 @@ import './Gallery.css';
 const categories = ['Tout', 'Grand Format', 'Gadgets', 'Infographie'];
 
 const projects = [
-    { id: 1, category: 'Grand Format', title: 'Impression Banderole', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8tN5mkvc8Pq7RIY7w7Nj4Wa8RaJWfYs7Zaw&s' },
+    { id: 1, category: 'Grand Format', title: 'Impression Banderole', image: 'https://live.staticflickr.com/65535/55014650949_1db92087f2_n.jpg' },
     { id: 2, category: 'Gadgets', title: 'T-Shirts Personnalisés', image: 'https://live.staticflickr.com/65535/55014385616_4ddb619981_n.jpg' },
     { id: 3, category: 'Infographie', title: 'Création Logo', image: 'https://images.unsplash.com/photo-1626785774625-ddcddc3445e9?q=80&w=600&auto=format&fit=crop' },
     { id: 4, category: 'Gadgets', title: 'Mugs Magiques', image: 'https://live.staticflickr.com/65535/55014363461_7ce5a00f31.jpg' },
