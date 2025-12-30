@@ -7,7 +7,7 @@ const projects = [
     { id: 1, category: 'Grand Format', title: 'Impression Banderole', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8tN5mkvc8Pq7RIY7w7Nj4Wa8RaJWfYs7Zaw&s' },
     { id: 2, category: 'Gadgets', title: 'T-Shirts Personnalisés', image: 'https://images.unsplash.com/photo-1529374255404-311a2a4f1fd9?q=80&w=600&auto=format&fit=crop' },
     { id: 3, category: 'Infographie', title: 'Création Logo', image: 'https://images.unsplash.com/photo-1626785774625-ddcddc3445e9?q=80&w=600&auto=format&fit=crop' },
-    { id: 4, category: 'Gadgets', title: 'Mugs Magiques', image: 'https://images.unsplash.com/photo-1514228742587-6b1558fcca3d?q=80&w=600&auto=format&fit=crop' },
+    { id: 4, category: 'Gadgets', title: 'Mugs Magiques', image: './mug.png' },
     { id: 5, category: 'Grand Format', title: 'Habillage Véhicule', image: 'https://images.unsplash.com/photo-1617727553252-65863c156eb0?q=80&w=600&auto=format&fit=crop' },
     { id: 6, category: 'Infographie', title: 'Flyer Event', image: 'https://static.vecteezy.com/ti/vecteur-libre/p1/1829863-business-design-concept-poster-with-flat-cartoon-illustration-flyer-business-pamphlet-brochure-magazine-cover-design-layout-space-for-promotion-advertising-marketing-vector-print-template-in-taille-a4-gratuit-vectoriel.jpg' },
 ];
