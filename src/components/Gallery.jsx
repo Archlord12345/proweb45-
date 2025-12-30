@@ -9,7 +9,7 @@ const projects = [
     { id: 3, category: 'Infographie', title: 'Création Logo', image: 'https://images.unsplash.com/photo-1626785774625-ddcddc3445e9?q=80&w=600&auto=format&fit=crop' },
     { id: 4, category: 'Gadgets', title: 'Mugs Magiques', image: 'https://images.unsplash.com/photo-1514228742587-6b1558fcca3d?q=80&w=600&auto=format&fit=crop' },
     { id: 5, category: 'Grand Format', title: 'Habillage Véhicule', image: 'https://images.unsplash.com/photo-1617727553252-65863c156eb0?q=80&w=600&auto=format&fit=crop' },
-    { id: 6, category: 'Infographie', title: 'Flyer Event', image: 'https://images.unsplash.com/photo-1558655146-d09347e0b7a9?q=80&w=600&auto=format&fit=crop' },
+    { id: 6, category: 'Infographie', title: 'Flyer Event', image: 'https://static.vecteezy.com/ti/vecteur-libre/p1/1829863-business-design-concept-poster-with-flat-cartoon-illustration-flyer-business-pamphlet-brochure-magazine-cover-design-layout-space-for-promotion-advertising-marketing-vector-print-template-in-taille-a4-gratuit-vectoriel.jpg' },
 ];
 
 const Gallery = () => {
