@@ -50,11 +50,10 @@ const Contact = () => {
                             <iframe
                                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3971.6015636301117!2d10.415665875677432!3d5.477242634435217!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x105f9bd8c5e594a7%3A0xdd699cf2fc9a19bc!2sETS%20Pro%20Informatique!5e0!3m2!1sfr!2scm!4v1767113632964!5m2!1sfr!2scm"
                                 width="100%"
-                                height="450"
+                                height="100%"
                                 style={{ border: 0 }}
                                 allowFullScreen=""
-                                loading="lazy"
-                                referrerPolicy="no-referrer-when-downgrade">
+                                loading="lazy">
                             </iframe>
                         </div>
                     </div>
