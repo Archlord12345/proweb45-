@@ -9,6 +9,7 @@ const Hero = () => {
             <div className="container hero-container">
                 <div className="hero-content">
                     <div className="hero-badge">
+                        <br /><br />
                         <span className="scrolling-text">Impression Numérique • Infographie • Bureautique</span>
                     </div>
                     <h1>
