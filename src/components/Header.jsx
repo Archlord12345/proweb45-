@@ -1,0 +1,67 @@
+import React, { useState, useEffect } from 'react';
+import { Menu, X, Printer, Phone } from 'lucide-react';
+import './Header.css';
+
+const Header = () => {
+    const [isScrolled, setIsScrolled] = useState(false);
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            setIsScrolled(window.scrollY > 50);
+        };
+        window.addEventListener('scroll', handleScroll);
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, []);
+
+    const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
+
+    const navLinks = [
+        { name: 'Accueil', href: '#hero' },
+        { name: 'Services', href: '#services' },
+        { name: 'Réalisations', href: '#gallery' },
+        { name: 'Contact', href: '#contact' },
+    ];
+
+    return (
+        <header className={`header ${isScrolled ? 'scrolled' : ''}`}>
+            <div className="container header-container">
+                <a href="#" className="logo">
+                    <span className="logo-icon"><Printer /></span>
+                    <div className="logo-text">
+                        <span className="logo-main">PRO</span>
+                        <span className="logo-sub">INFORMATIQUE</span>
+                    </div>
+                </a>
+
+                <nav className={`nav ${isMenuOpen ? 'open' : ''}`}>
+                    <ul className="nav-list">
+                        {navLinks.map((link) => (
+                            <li key={link.name}>
+                                <a
+                                    href={link.href}
+                                    className="nav-link"
+                                    onClick={() => setIsMenuOpen(false)}
+                                >
+                                    {link.name}
+                                </a>
+                            </li>
+                        ))}
+                    </ul>
+                </nav>
+
+                <div className="header-actions">
+                    <a href="tel:+237699979857" className="btn-call">
+                        <Phone size={18} />
+                        <span className="desktop-only">699 97 98 57</span>
+                    </a>
+                    <button className="menu-toggle" onClick={toggleMenu}>
+                        {isMenuOpen ? <X /> : <Menu />}
+                    </button>
+                </div>
+            </div>
+        </header>
+    );
+};
+
+export default Header;
