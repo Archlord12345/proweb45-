@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, Printer, Phone } from 'lucide-react';
+import { Menu, X, Phone } from 'lucide-react';
 import './Header.css';
 
 const Header = () => {
@@ -29,7 +29,7 @@ const Header = () => {
         <header className={`header ${isScrolled || location.pathname !== '/' ? 'scrolled' : ''}`}>
             <div className="container header-container">
                 <Link to="/" className="logo">
-                    <span className="logo-icon"><Printer /></span>
+                    <img src="/logo.png" alt="ProInfo Logo" className="logo-img" style={{ height: '40px', width: 'auto', marginRight: '10px' }} />
                     <div className="logo-text">
                         <span className="logo-main">PRO</span>
                         <span className="logo-sub">INFORMATIQUE</span>
