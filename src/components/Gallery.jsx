@@ -4,7 +4,7 @@ import './Gallery.css';
 const categories = ['Tout', 'Grand Format', 'Gadgets', 'Infographie'];
 
 const projects = [
-    { id: 1, category: 'Grand Format', title: 'Impression Banderole', image: 'https://images.unsplash.com/photo-1626785774573-4b7993143a4d?q=80&w=600&auto=format&fit=crop' },
+    { id: 1, category: 'Grand Format', title: 'Impression Banderole', image: 'https://www.google.com/imgres?q=banderole%20evenement&imgurl=https%3A%2F%2Fwww.copytop.com%2Fupload%2Fmedia%2FmagazineImage%2F0001%2F10%2Fthumb_9428_magazineImage_desktop.jpeg&imgrefurl=https%3A%2F%2Fwww.copytop.com%2Fguides-impression%2Fconseil-entreprise%2Fpratique-amovible-et-a-forte-visibilite-decouvrez-tous-les-avantages-de-la-banderole-publicitaire&docid=-g0Xw1bYjVQ3QM&tbnid=sPyVDIDSjF8ofM&vet=12ahUKEwiR6sOR8OWRAxUGZ0EAHcZdL6AQM3oECDQQAA..i&w=537&h=346&hcb=2&ved=2ahUKEwiR6sOR8OWRAxUGZ0EAHcZdL6AQM3oECDQQAA' },
     { id: 2, category: 'Gadgets', title: 'T-Shirts Personnalisés', image: 'https://images.unsplash.com/photo-1529374255404-311a2a4f1fd9?q=80&w=600&auto=format&fit=crop' },
     { id: 3, category: 'Infographie', title: 'Création Logo', image: 'https://images.unsplash.com/photo-1626785774625-ddcddc3445e9?q=80&w=600&auto=format&fit=crop' },
     { id: 4, category: 'Gadgets', title: 'Mugs Magiques', image: 'https://images.unsplash.com/photo-1514228742587-6b1558fcca3d?q=80&w=600&auto=format&fit=crop' },
