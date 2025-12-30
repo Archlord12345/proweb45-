@@ -35,6 +35,10 @@
     transform: scale(1.05);
 }
 
+.logo-img {
+    height: 50px;
+}
+
 .header.scrolled .logo {
     color: var(--color-dark);
 }

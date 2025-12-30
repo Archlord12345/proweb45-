@@ -1,9 +1,9 @@
 :root {
   /* Colors */
-  --color-primary: #b91c1c; /* Deep Red */
-  --color-primary-light: #ef4444;
-  --color-secondary: #65a30d; /* Vibrant Lime Green */
-  --color-secondary-light: #84cc16;
+  --color-primary: #8B5CF6; /* Purple */
+  --color-primary-light: #A78BFA;
+  --color-secondary: #EC4899; /* Pink */
+  --color-secondary-light: #F472B6;
   --color-dark: #111827; /* Near Black */
   --color-dark-lighter: #1f2937;
   --color-light: #f9fafb;
@@ -30,5 +30,5 @@
   --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
   --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
   --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
-  --shadow-glow: 0 0 20px rgba(185, 28, 28, 0.3);
+  --shadow-glow: 0 0 20px rgba(139, 92, 246, 0.3);
 }
