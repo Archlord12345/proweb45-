@@ -12,7 +12,7 @@ const Footer = () => {
                         Impression numérique grand format, infographie et services bureautiques de qualité supérieure.
                     </p>
                     <div className="social-links">
-                        <a href="#" className="social-link"><Facebook size={20} /></a>
+                        <a href="#" className="https://web.facebook.com/EtsProInformatique"><Facebook size={20} /></a>
                         <a href="#" className="social-link"><Instagram size={20} /></a>
                     </div>
                 </div>
