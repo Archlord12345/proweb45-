@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, Printer, Phone } from 'lucide-react';
 import './Header.css';
 
 const Header = () => {
     const [isScrolled, setIsScrolled] = useState(false);
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const location = useLocation();
 
     useEffect(() => {
         const handleScroll = () => {
@@ -17,34 +19,34 @@ const Header = () => {
     const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
     const navLinks = [
-        { name: 'Accueil', href: '#hero' },
-        { name: 'Services', href: '#services' },
-        { name: 'Réalisations', href: '#gallery' },
-        { name: 'Contact', href: '#contact' },
+        { name: 'Accueil', path: '/' },
+        { name: 'Services', path: '/services' },
+        { name: 'Réalisations', path: '/gallery' },
+        { name: 'Contact', path: '/contact' },
     ];
 
     return (
-        <header className={`header ${isScrolled ? 'scrolled' : ''}`}>
+        <header className={`header ${isScrolled || location.pathname !== '/' ? 'scrolled' : ''}`}>
             <div className="container header-container">
-                <a href="#" className="logo">
+                <Link to="/" className="logo">
                     <span className="logo-icon"><Printer /></span>
                     <div className="logo-text">
                         <span className="logo-main">PRO</span>
                         <span className="logo-sub">INFORMATIQUE</span>
                     </div>
-                </a>
+                </Link>
 
                 <nav className={`nav ${isMenuOpen ? 'open' : ''}`}>
                     <ul className="nav-list">
                         {navLinks.map((link) => (
                             <li key={link.name}>
-                                <a
-                                    href={link.href}
-                                    className="nav-link"
+                                <Link
+                                    to={link.path}
+                                    className={`nav-link ${location.pathname === link.path ? 'active' : ''}`}
                                     onClick={() => setIsMenuOpen(false)}
                                 >
                                     {link.name}
-                                </a>
+                                </Link>
                             </li>
                         ))}
                     </ul>

@@ -1,20 +1,25 @@
 import React from 'react';
+import { Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
-import Hero from './components/Hero';
-import Services from './components/Services';
-import Gallery from './components/Gallery';
-import Contact from './components/Contact';
 import Footer from './components/Footer';
+
+// Pages
+import Home from './pages/Home';
+import ServicesPage from './pages/ServicesPage';
+import GalleryPage from './pages/GalleryPage';
+import ContactPage from './pages/ContactPage';
 
 function App() {
   return (
     <div className="App">
       <Header />
       <main>
-        <Hero />
-        <Services />
-        <Gallery />
-        <Contact />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/services" element={<ServicesPage />} />
+          <Route path="/gallery" element={<GalleryPage />} />
+          <Route path="/contact" element={<ContactPage />} />
+        </Routes>
       </main>
       <Footer />
     </div>
