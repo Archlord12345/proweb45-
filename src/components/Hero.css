@@ -39,6 +39,7 @@
     grid-template-columns: 1fr 1fr;
     gap: var(--spacing-lg);
     align-items: center;
+    perspective: 1200px;
 }
 
 .hero-content {
