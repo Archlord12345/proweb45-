@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Printer, Palette, Coffee, PenTool, Check } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import './ServicesTabs.css';
 
 const serviceCategories = [
