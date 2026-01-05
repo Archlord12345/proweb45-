@@ -1,6 +1,19 @@
 .contact-section {
-    background-color: var(--color-white);
+    background: linear-gradient(135deg, var(--color-white) 0%, var(--color-light) 100%);
     padding-bottom: var(--spacing-xl);
+    position: relative;
+}
+
+.contact-section::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -10%;
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(circle, rgba(139, 92, 246, 0.05) 0%, transparent 70%);
+    border-radius: 50%;
+    z-index: 0;
 }
 
 .contact-wrapper {
