@@ -1,5 +1,6 @@
 .contact-section {
     background: linear-gradient(135deg, var(--color-white) 0%, var(--color-light) 100%);
+    padding-top: calc(var(--spacing-lg) + 80px);
     padding-bottom: var(--spacing-xl);
     position: relative;
 }
