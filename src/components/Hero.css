@@ -246,6 +246,30 @@
     }
 }
 
+/* Scroll Down Indicator */
+.scroll-indicator {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: rgba(255, 255, 255, 0.7);
+    animation: bounce 2s ease-in-out infinite;
+    z-index: 10;
+}
+
+.scroll-indicator:hover {
+    color: rgba(255, 255, 255, 1);
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateX(-50%) translateY(0);
+    }
+    50% {
+        transform: translateX(-50%) translateY(-10px);
+    }
+}
+
 @media (max-width: 968px) {
     .hero-container {
         grid-template-columns: 1fr;
