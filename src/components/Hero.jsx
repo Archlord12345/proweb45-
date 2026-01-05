@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowRight, Printer } from 'lucide-react';
+import { ArrowRight, Printer, ChevronDown } from 'lucide-react';
 import './Hero.css';
 
 const Hero = () => {
