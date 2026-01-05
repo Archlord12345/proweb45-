@@ -9,7 +9,7 @@ const Contact = () => {
     };
 
     return (
-        <section className="section contact-section" id="contact">
+        <section className="section contact-section">
             <div className="container">
                 <div className="contact-wrapper">
                     <div className="contact-info">
