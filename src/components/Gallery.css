@@ -1,6 +1,7 @@
 .gallery-section {
     background: linear-gradient(135deg, var(--color-light) 0%, #f3f4f6 100%);
     perspective: 1200px;
+    padding-top: calc(var(--spacing-lg) + 80px);
 }
 
 .gallery-filters {
