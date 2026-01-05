@@ -2,6 +2,7 @@
     background: linear-gradient(135deg, var(--color-light) 0%, #f3f4f6 100%);
     position: relative;
     overflow: hidden;
+    padding-top: calc(var(--spacing-lg) + 80px);
 }
 
 /* Tabs Navigation */
