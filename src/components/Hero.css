@@ -71,6 +71,30 @@
     font-size: 0.875rem;
     text-transform: uppercase;
     letter-spacing: 1px;
+    overflow: hidden;
+    animation: slideInDown 0.6s ease forwards;
+}
+
+.scrolling-text {
+    display: inline-block;
+    animation: scroll 10s linear infinite;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
 }
 
 .hero h1 {
