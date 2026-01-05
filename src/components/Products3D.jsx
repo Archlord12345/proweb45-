@@ -108,10 +108,10 @@ const Products3D = () => {
                             <div className="product-image-wrapper">
                                 <img src={product.image} alt={product.name} loading="lazy" />
                                 <div className="product-overlay-3d">
-                                    <button className="add-to-cart-btn">
+                                    <Link to="/contact" className="add-to-cart-btn">
                                         <ShoppingCart size={20} />
                                         Demander un devis
-                                    </button>
+                                    </Link>
                                 </div>
                             </div>
                             <div className="product-info">
