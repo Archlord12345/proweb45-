@@ -56,6 +56,11 @@ const Hero = () => {
                     <div className="visual-circle"></div>
                 </div>
             </div>
+
+            {/* Scroll Down Indicator */}
+            <div className="scroll-indicator">
+                <ChevronDown size={24} />
+            </div>
         </section>
     );
 };
