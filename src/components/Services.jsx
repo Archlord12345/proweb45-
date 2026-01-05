@@ -47,7 +47,7 @@ const Services = () => {
                             </div>
                             <h3>{service.title}</h3>
                             <p>{service.description}</p>
-                            <a href="#contact" className="service-link">Commander service →</a>
+                            <Link to="/contact" className="service-link">Commander service →</Link>
                         </div>
                     ))}
                 </div>
