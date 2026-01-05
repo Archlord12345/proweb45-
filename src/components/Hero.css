@@ -180,6 +180,14 @@
     align-items: center;
     gap: 1rem;
     animation: float 6s ease-in-out infinite;
+    transition: all 0.3s ease;
+}
+
+.visual-card:hover {
+    transform: translateY(-10px) scale(1.05);
+    background: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 20px 40px rgba(139, 92, 246, 0.2);
 }
 
 .card-1 {
@@ -194,19 +202,20 @@
     left: 10%;
     width: 180px;
     animation-delay: 2s;
+    background: linear-gradient(135deg, rgba(236, 72, 153, 0.1), rgba(139, 92, 246, 0.05));
 }
 
 @keyframes float {
     0% {
-        transform: translateY(0);
+        transform: translateY(0) rotateX(0deg);
     }
 
     50% {
-        transform: translateY(-20px);
+        transform: translateY(-20px) rotateX(5deg);
     }
 
     100% {
-        transform: translateY(0);
+        transform: translateY(0) rotateX(0deg);
     }
 }
 
