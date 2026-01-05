@@ -2,6 +2,7 @@
     background: linear-gradient(135deg, #ffffff 0%, var(--color-light) 100%);
     position: relative;
     overflow: hidden;
+    padding-top: calc(var(--spacing-lg) + 80px);
 }
 
 /* Background animation */
