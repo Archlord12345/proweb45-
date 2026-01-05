@@ -1,5 +1,6 @@
 .gallery-section {
-    background-color: var(--color-light);
+    background: linear-gradient(135deg, var(--color-light) 0%, #f3f4f6 100%);
+    perspective: 1200px;
 }
 
 .gallery-filters {
@@ -13,17 +14,25 @@
 .filter-btn {
     padding: 0.5rem 1.5rem;
     border-radius: var(--radius-full);
-    border: 1px solid var(--color-gray);
+    border: 2px solid var(--color-gray);
     color: var(--color-gray);
-    font-weight: 500;
-    transition: all 0.3s;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    position: relative;
 }
 
-.filter-btn:hover,
-.filter-btn.active {
-    background: var(--color-primary);
+.filter-btn:hover {
+    transform: translateY(-2px);
     border-color: var(--color-primary);
+}
+
+.filter-btn.active {
+    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
+    border-color: transparent;
     color: white;
+    box-shadow: 0 8px 20px rgba(139, 92, 246, 0.3);
+    transform: scale(1.05);
 }
 
 .gallery-grid {
@@ -38,6 +47,8 @@
     overflow: hidden;
     aspect-ratio: 4/3;
     cursor: pointer;
+    transform-style: preserve-3d;
+    perspective: 1000px;
 }
 
 .gallery-item img {
@@ -48,7 +59,7 @@
 }
 
 .gallery-item:hover img {
-    transform: scale(1.1);
+    transform: scale(1.15) rotateY(5deg);
 }
 
 .gallery-overlay {
@@ -57,10 +68,10 @@
     left: 0;
     width: 100%;
     padding: 2rem 1.5rem 1.5rem;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.4), transparent);
     color: white;
     transform: translateY(100%);
-    transition: transform 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 .gallery-item:hover .gallery-overlay {
@@ -71,6 +82,7 @@
     font-size: 1.25rem;
     margin-bottom: 0.25rem;
     color: var(--color-white);
+    animation: slideIn 0.3s ease forwards;
 }
 
 .gallery-overlay span {
@@ -79,4 +91,18 @@
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.5px;
+    display: inline-block;
+    animation: slideIn 0.3s ease forwards 0.1s;
+    animation-fill-mode: both;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
