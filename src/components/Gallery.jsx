@@ -20,7 +20,7 @@ const Gallery = () => {
         : projects.filter(p => p.category === activeCategory);
 
     return (
-        <section className="section gallery-section" id="gallery">
+        <section className="section gallery-section">
             <div className="container">
                 <div className="section-header">
                     <h2 className="section-title">Nos Réalisations</h2>
