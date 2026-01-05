@@ -83,7 +83,7 @@ const Products3D = () => {
     };
 
     return (
-        <section className="section products-3d-section" id="products">
+        <section className="section products-3d-section">
             <div className="container">
                 <div className="section-header">
                     <h2 className="section-title">Nos Produits Phares</h2>
