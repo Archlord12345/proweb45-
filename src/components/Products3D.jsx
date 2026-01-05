@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { ShoppingCart, Star } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import './Products3D.css';
 
 const products = [
