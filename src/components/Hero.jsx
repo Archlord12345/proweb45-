@@ -23,12 +23,12 @@ const Hero = () => {
                         De la conception graphique à l'impression grand format, nous donnons vie à vos idées.
                     </p>
                     <div className="hero-actions">
-                        <a href="#services" className="btn btn-primary">
+                        <Link to="/services" className="btn btn-primary">
                             Nos Services <ArrowRight size={20} />
-                        </a>
-                        <a href="#contact" className="btn btn-outline">
+                        </Link>
+                        <Link to="/contact" className="btn btn-outline">
                             Demander un Devis
-                        </a>
+                        </Link>
                     </div>
                     <div className="hero-stats">
                         <div className="stat-item">
