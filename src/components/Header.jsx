@@ -29,21 +29,21 @@ const Header = () => {
     return (
         <header className={`header ${isScrolled ? 'scrolled' : ''}`}>
             <div className="container header-container">
-                <a href="#" className="logo">
+                <Link to="/" className="logo">
                     <img src="logo.png" alt="PRO INFORMATIQUE Logo" className="logo-img" />
-                </a>
+                </Link>
 
                 <nav className={`nav ${isMenuOpen ? 'open' : ''}`}>
                     <ul className="nav-list">
                         {navLinks.map((link) => (
                             <li key={link.name}>
-                                <a
-                                    href={link.href}
-                                    className="nav-link"
+                                <NavLink
+                                    to={link.href}
+                                    className={({ isActive }) => `nav-link ${isActive ? 'active' : ''}`}
                                     onClick={() => setIsMenuOpen(false)}
                                 >
                                     {link.name}
-                                </a>
+                                </NavLink>
                             </li>
                         ))}
                     </ul>
