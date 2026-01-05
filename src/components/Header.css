@@ -129,8 +129,17 @@
     transition: width 0.3s ease;
 }
 
-.nav-link:hover::after {
+.nav-link:hover::after,
+.nav-link.active::after {
     width: 100%;
+}
+
+.nav-link.active {
+    color: var(--color-secondary);
+}
+
+.header.scrolled .nav-link.active {
+    color: var(--color-secondary);
 }
 
 /* Actions */
