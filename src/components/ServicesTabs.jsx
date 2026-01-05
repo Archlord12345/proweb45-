@@ -114,7 +114,7 @@ const ServicesTabs = () => {
                 {/* CTA Section */}
                 <div className="services-cta">
                     <p>Besoin d'un devis personnalisé ?</p>
-                    <a href="#contact" className="btn btn-primary">Demander un devis</a>
+                    <Link to="/contact" className="btn btn-primary">Demander un devis</Link>
                 </div>
             </div>
         </section>
