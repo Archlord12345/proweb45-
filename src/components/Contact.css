@@ -116,11 +116,17 @@
 .form-group textarea {
     width: 100%;
     padding: 0.75rem 1rem;
-    border: 1px solid #e5e7eb;
+    border: 2px solid #e5e7eb;
     border-radius: var(--radius-sm);
     font-family: inherit;
     font-size: 1rem;
-    transition: border-color 0.2s, box-shadow 0.2s;
+    transition: all 0.3s ease;
+    background: rgba(255, 255, 255, 0.7);
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #d1d5db;
 }
 
 .form-group input:focus,
@@ -128,7 +134,9 @@
 .form-group textarea:focus {
     outline: none;
     border-color: var(--color-primary);
-    box-shadow: 0 0 0 3px rgba(185, 28, 28, 0.1);
+    background: white;
+    box-shadow: 0 0 0 4px rgba(139, 92, 246, 0.1), inset 0 0 0 1px rgba(139, 92, 246, 0.2);
+    transform: translateY(-2px);
 }
 
 .btn-block {
