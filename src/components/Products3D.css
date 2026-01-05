@@ -104,6 +104,7 @@
     transition: all 0.3s ease;
     border: none;
     font-size: 0.95rem;
+    text-decoration: none;
 }
 
 .add-to-cart-btn:hover {
