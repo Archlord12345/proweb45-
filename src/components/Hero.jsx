@@ -1,10 +1,11 @@
 import React from 'react';
 import { ArrowRight, Printer, ChevronDown } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import './Hero.css';
 
 const Hero = () => {
     return (
-        <section className="hero" id="hero">
+        <section className="hero">
             <div className="hero-bg"></div>
             <div className="container hero-container">
                 <div className="hero-content">
