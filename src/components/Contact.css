@@ -1,6 +1,20 @@
 .contact-section {
-    background-color: var(--color-white);
+    background: linear-gradient(135deg, var(--color-white) 0%, var(--color-light) 100%);
+    padding-top: calc(var(--spacing-lg) + 80px);
     padding-bottom: var(--spacing-xl);
+    position: relative;
+}
+
+.contact-section::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -10%;
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(circle, rgba(139, 92, 246, 0.05) 0%, transparent 70%);
+    border-radius: 50%;
+    z-index: 0;
 }
 
 .contact-wrapper {
@@ -8,6 +22,8 @@
     grid-template-columns: 1fr 1fr;
     gap: 4rem;
     align-items: start;
+    position: relative;
+    z-index: 1;
 }
 
 .text-left {
@@ -35,13 +51,21 @@
 .icon-box {
     width: 50px;
     height: 50px;
-    background: rgba(185, 28, 28, 0.1);
+    background: linear-gradient(135deg, rgba(139, 92, 246, 0.15) 0%, rgba(236, 72, 153, 0.1) 100%);
     color: var(--color-primary);
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: var(--radius-md);
     flex-shrink: 0;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(139, 92, 246, 0.1);
+}
+
+.contact-item:hover .icon-box {
+    transform: scale(1.15) translateY(-5px);
+    background: linear-gradient(135deg, rgba(139, 92, 246, 0.25) 0%, rgba(236, 72, 153, 0.2) 100%);
+    box-shadow: 0 10px 20px rgba(139, 92, 246, 0.2);
 }
 
 .contact-item h4 {
@@ -69,13 +93,20 @@
 
 /* Form */
 .contact-form {
-    background: rgba(255, 255, 255, 0.8);
+    background: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     padding: 2.5rem;
     border-radius: var(--radius-md);
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.1);
     border: 1px solid rgba(255, 255, 255, 0.18);
+    transition: all 0.3s ease;
+    transform-style: preserve-3d;
+}
+
+.contact-form:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(139, 92, 246, 0.15);
 }
 
 .form-group {
@@ -94,11 +125,17 @@
 .form-group textarea {
     width: 100%;
     padding: 0.75rem 1rem;
-    border: 1px solid #e5e7eb;
+    border: 2px solid #e5e7eb;
     border-radius: var(--radius-sm);
     font-family: inherit;
     font-size: 1rem;
-    transition: border-color 0.2s, box-shadow 0.2s;
+    transition: all 0.3s ease;
+    background: rgba(255, 255, 255, 0.7);
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #d1d5db;
 }
 
 .form-group input:focus,
@@ -106,7 +143,9 @@
 .form-group textarea:focus {
     outline: none;
     border-color: var(--color-primary);
-    box-shadow: 0 0 0 3px rgba(185, 28, 28, 0.1);
+    background: white;
+    box-shadow: 0 0 0 4px rgba(139, 92, 246, 0.1), inset 0 0 0 1px rgba(139, 92, 246, 0.2);
+    transform: translateY(-2px);
 }
 
 .btn-block {

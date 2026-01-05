@@ -1,10 +1,11 @@
 import React from 'react';
-import { ArrowRight, Printer } from 'lucide-react';
+import { ArrowRight, Printer, ChevronDown } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import './Hero.css';
 
 const Hero = () => {
     return (
-        <section className="hero" id="hero">
+        <section className="hero">
             <div className="hero-bg"></div>
             <div className="container hero-container">
                 <div className="hero-content">
@@ -22,12 +23,12 @@ const Hero = () => {
                         De la conception graphique à l'impression grand format, nous donnons vie à vos idées.
                     </p>
                     <div className="hero-actions">
-                        <a href="#services" className="btn btn-primary">
+                        <Link to="/services" className="btn btn-primary">
                             Nos Services <ArrowRight size={20} />
-                        </a>
-                        <a href="#contact" className="btn btn-outline">
+                        </Link>
+                        <Link to="/contact" className="btn btn-outline">
                             Demander un Devis
-                        </a>
+                        </Link>
                     </div>
                     <div className="hero-stats">
                         <div className="stat-item">
@@ -55,6 +56,11 @@ const Hero = () => {
                     </div>
                     <div className="visual-circle"></div>
                 </div>
+            </div>
+
+            {/* Scroll Down Indicator */}
+            <div className="scroll-indicator">
+                <ChevronDown size={24} />
             </div>
         </section>
     );

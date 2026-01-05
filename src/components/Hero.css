@@ -1,13 +1,12 @@
 .hero {
     position: relative;
     min-height: 100vh;
-    /* Full screen height */
     display: flex;
     align-items: center;
     overflow: hidden;
     padding-top: 80px;
-    /* Space for fixed header */
     background-color: var(--color-dark);
+    perspective: 1200px;
 }
 
 .hero-bg {
@@ -40,10 +39,23 @@
     grid-template-columns: 1fr 1fr;
     gap: var(--spacing-lg);
     align-items: center;
+    perspective: 1200px;
 }
 
 .hero-content {
     max-width: 600px;
+    animation: slideInLeft 0.8s ease forwards;
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px) translateZ(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0) translateZ(0);
+    }
 }
 
 .hero-badge {
@@ -59,6 +71,30 @@
     font-size: 0.875rem;
     text-transform: uppercase;
     letter-spacing: 1px;
+    overflow: hidden;
+    animation: slideInDown 0.6s ease forwards;
+}
+
+.scrolling-text {
+    display: inline-block;
+    animation: scroll 10s linear infinite;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
 }
 
 .hero h1 {
@@ -153,7 +189,21 @@
 .hero-visual {
     position: relative;
     height: 500px;
-    /* Simple illustrative arrangement */
+    perspective: 1000px;
+    animation: slideInRight 0.8s ease forwards;
+    animation-delay: 0.2s;
+    animation-fill-mode: both;
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(50px) translateZ(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0) translateZ(0);
+    }
 }
 
 .visual-circle {
@@ -181,6 +231,14 @@
     align-items: center;
     gap: 1rem;
     animation: float 6s ease-in-out infinite;
+    transition: all 0.3s ease;
+}
+
+.visual-card:hover {
+    transform: translateY(-10px) scale(1.05);
+    background: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 20px 40px rgba(139, 92, 246, 0.2);
 }
 
 .card-1 {
@@ -195,19 +253,44 @@
     left: 10%;
     width: 180px;
     animation-delay: 2s;
+    background: linear-gradient(135deg, rgba(236, 72, 153, 0.1), rgba(139, 92, 246, 0.05));
 }
 
 @keyframes float {
     0% {
-        transform: translateY(0);
+        transform: translateY(0) rotateX(0deg);
     }
 
     50% {
-        transform: translateY(-20px);
+        transform: translateY(-20px) rotateX(5deg);
     }
 
     100% {
-        transform: translateY(0);
+        transform: translateY(0) rotateX(0deg);
+    }
+}
+
+/* Scroll Down Indicator */
+.scroll-indicator {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: rgba(255, 255, 255, 0.7);
+    animation: bounce 2s ease-in-out infinite;
+    z-index: 10;
+}
+
+.scroll-indicator:hover {
+    color: rgba(255, 255, 255, 1);
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateX(-50%) translateY(0);
+    }
+    50% {
+        transform: translateX(-50%) translateY(-10px);
     }
 }
 

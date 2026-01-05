@@ -1,0 +1,31 @@
+.page-wrapper {
+    min-height: calc(100vh - 200px);
+    animation: pageTransitionIn 0.5s ease forwards;
+    padding-top: 80px;
+}
+
+.home-page {
+    animation: pageTransitionIn 0.5s ease forwards;
+}
+
+@keyframes pageTransitionIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes pageTransitionOut {
+    from {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    to {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+}

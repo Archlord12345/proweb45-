@@ -1,0 +1,69 @@
+.scroll-reveal {
+    opacity: 0;
+    transform: translateY(30px) rotateX(-10deg);
+    transition: all 0.8s cubic-bezier(0.34, 1.56, 0.64, 1);
+    transform-origin: center;
+}
+
+.scroll-reveal.visible {
+    opacity: 1;
+    transform: translateY(0) rotateX(0deg);
+}
+
+/* Staggered animations */
+.scroll-reveal:nth-child(1) {
+    transition-delay: 0s;
+}
+
+.scroll-reveal:nth-child(2) {
+    transition-delay: 0.1s;
+}
+
+.scroll-reveal:nth-child(3) {
+    transition-delay: 0.2s;
+}
+
+.scroll-reveal:nth-child(4) {
+    transition-delay: 0.3s;
+}
+
+.scroll-reveal:nth-child(5) {
+    transition-delay: 0.4s;
+}
+
+.scroll-reveal:nth-child(6) {
+    transition-delay: 0.5s;
+}
+
+/* Variant animations */
+.scroll-reveal.slide-left {
+    transform: translateX(-50px) translateY(30px);
+}
+
+.scroll-reveal.slide-left.visible {
+    transform: translateX(0) translateY(0);
+}
+
+.scroll-reveal.slide-right {
+    transform: translateX(50px) translateY(30px);
+}
+
+.scroll-reveal.slide-right.visible {
+    transform: translateX(0) translateY(0);
+}
+
+.scroll-reveal.scale {
+    transform: scale(0.8) translateY(30px);
+}
+
+.scroll-reveal.scale.visible {
+    transform: scale(1) translateY(0);
+}
+
+.scroll-reveal.rotate {
+    transform: rotate(-10deg) translateY(30px);
+}
+
+.scroll-reveal.rotate.visible {
+    transform: rotate(0deg) translateY(0);
+}

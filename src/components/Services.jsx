@@ -1,5 +1,6 @@
 import React from 'react';
 import { Printer, Palette, Coffee, PenTool } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import './Services.css';
 
 const services = [
@@ -31,7 +32,7 @@ const services = [
 
 const Services = () => {
     return (
-        <section className="section services-section" id="services">
+        <section className="section services-section">
             <div className="container">
                 <div className="section-header">
                     <h2 className="section-title">Nos Services</h2>
@@ -46,7 +47,7 @@ const Services = () => {
                             </div>
                             <h3>{service.title}</h3>
                             <p>{service.description}</p>
-                            <a href="#contact" className="service-link">Commander service →</a>
+                            <Link to="/contact" className="service-link">Commander service →</Link>
                         </div>
                     ))}
                 </div>
