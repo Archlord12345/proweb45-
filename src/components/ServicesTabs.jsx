@@ -55,7 +55,7 @@ const ServicesTabs = () => {
     const activeCategory = serviceCategories.find(cat => cat.id === activeTab);
 
     return (
-        <section className="section services-tabs-section" id="services-tabs">
+        <section className="section services-tabs-section">
             <div className="container">
                 <div className="section-header">
                     <h2 className="section-title">Nos Services Premium</h2>
